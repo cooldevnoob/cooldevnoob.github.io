@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<title>cuTEAing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('images/truck.jpeg');
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#book" class="w3-button w3-block w3-black">BOOKING</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6AM to 8PM</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">cuTEAing</span> 
+    <span class = "w3-text-white">
+      <p style = "font-size: 30px;">Connect with Us! </p>
+      <a target = "blank" href = "https://www.facebook.com/wix"><i class="fa fa-facebook-official w3-xxlarge w3-hover-opacity"></i></a>
+      <a target = "blank" href = "https://twitter.com/wix"><i class="fa fa-twitter w3-xxlarge w3-hover-opacity"></i></a>
+      <a target = "blank" href = "https://instagram.com/wix/"><i class="fa fa-instagram w3-xxlarge w3-hover-opacity"></i></a>
+      <a href = "mailto: "><i class="fa fa-envelope w3-xxlarge w3-hover-opacity"></i></a>
+    </span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-tag">Address</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT cuTEAing</span></h5>
+    <p> Cuteaing, an ordinary name with an extra ordinary spelling.
+      We are a group of chai wala's serving on wheels, when at our service unlike the desi cutting, the TEA in our name makes you eligible for a full cup of tea.
+      The only difference we share with your favorite chai tapri is consistent taste and hygiene. 
+      Yet a modernized version of tapri wala's we believe in rich taste at the minimum price, 
+      kyunki hum pilate hai, "sirf achi chai"!
+    </p>
+    <p> Greener we go! <br>
+      Similar to the world we too believe in reforming our business with innovation, however not on the cost of our environment
+      We serve on wheels, with our versatile working model
+      We run on electricity, not devouring fuel. Additionally, we attempt to keep our power consumption low in any event
+    </p>
+    <p> Ayurveda recommend utilising kuladhs add basic supplements to your tea. Above all they are eco-friendly, easily decomposed, and hygienic
+    </p>
+    <img src="images/kulhad.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 6am to 8pm.</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Item 1</h5>
+      <p class="w3-text-grey">Description of item {Cost}</p><br>
+
+      <h5>Item 2</h5>
+      <p class="w3-text-grey">Description of item {Cost}</p><br>
+      
+      <h5>Item 3</h5>
+      <p class="w3-text-grey">Description of item {Cost}</p><br>
+      
+      <h5>Item 4</h5>
+      <p class="w3-text-grey">Description of item {Cost}</p><br>
+      
+      <h5>Item 5</h5>
+      <p class="w3-text-grey">Description of item {Cost}</p><br>
+      
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Special Tea </h5>
+      <p class="w3-text-grey">Special tea made of xyz {Cost}</p><br>
+    
+      <h5>Special Tea</h5>
+      <p class="w3-text-grey">Special tea made of xyz {Cost}</p><br>
+
+      <h5>Special Tea</h5>
+      <p class="w3-text-grey">Special tea made of xyz {Cost}</p><br>
+
+      <h5>Special Tea</h5>
+      <p class="w3-text-grey">Special tea made of xyz {Cost}</p><br>
+
+      <h5>Special Tea</h5>
+      <p class="w3-text-grey">Special tea made of xyz {Cost}</p><br>
+    </div>  
+    <img src="images/menu_card.jpeg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- How to Book Container -->
+<div class="w3-container" id="book" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">HOW TO BOOK A TRUCK</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="images/truck.jpeg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a truck, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>© Copyright</p> 
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
